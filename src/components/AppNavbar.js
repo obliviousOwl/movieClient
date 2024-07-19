@@ -25,8 +25,7 @@ export default function AppNavbar() {
                             </>
                         ) : (
                             <>
-                                
-                                <NavLink to="/addMovie" className="custom-nav-link">Add Movie</NavLink>
+                                { user.isAdmin && <NavLink to="/addMovie" className="custom-nav-link">Add Movie</NavLink>}
                                 <NavLink to="/logout" className="custom-nav-link">Logout</NavLink>
                             </>
                         )}

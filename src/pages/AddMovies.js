@@ -73,7 +73,7 @@ export default function AddMovie() {
     <>
       <h1 className="text-center pt-5">Add Movie</h1>
       {
-        !user.id ?
+        !user.isAdmin ?
           <Navigate to='/login' />
           :
           <Form onSubmit={e => addWorkout(e)}>
